@@ -1,10 +1,9 @@
 # Python Tweet
 
-![PyPI - Version](https://img.shields.io/pypi/v/py-tweet?labelColor=%232e343b&label=pypi%20package)
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/py-tweet?labelColor=%232e343b)
-![PyPI - License](https://img.shields.io/pypi/l/py-tweet?labelColor=%232e343b)
+![PyPI - Version](https://img.shields.io/pypi/v/python-tweet?labelColor=%232e343b&label=pypi%20package)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/python-tweet?labelColor=%232e343b)
+![PyPI - License](https://img.shields.io/pypi/l/python-tweet?labelColor=%232e343b)
 [![Tests](https://github.com/fabelx/py-tweet/actions/workflows/tests.yml/badge.svg)](https://github.com/fabelx/py-tweet/actions/workflows/tests.yml)
-![PyPI - Downloads](https://img.shields.io/pypi/dm/py-tweet?labelColor=%232e343b)
 
 
 ## About
@@ -54,7 +53,7 @@ if __name__ == '__main__':
 ```
 
 #### Sync way:
-```pycon
+```python
 import json
 
 from pytweet.sync import get_tweet
