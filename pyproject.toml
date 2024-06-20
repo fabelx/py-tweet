@@ -1,0 +1,80 @@
+[project]
+name = "python-tweet"
+dynamic = ["version"]
+description = "A Python library for retrieving tweets from X (f.k.a. Twitter)"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { file = "LICENSE" }
+keywords = ["twitter", "x", "tweet", "api"]
+authors = [
+    { name = "Vladyslav Novotnyi", email = "psejjkuczo@proxiedmail.com" }
+]
+maintainers = [
+    { name = "Vladyslav Novotnyi", email = "psejjkuczo@proxiedmail.com" }
+]
+
+# Classifiers help users find your project by categorizing it.
+#
+# For a list of valid classifiers, see https://pypi.org/classifiers/
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3 :: Only"
+]
+
+dependencies = [
+    "aiohttp",
+    "requests"
+]
+
+#   $ pip install pycrossword-generator[dev]
+[project.optional-dependencies]
+# development dependency group
+dev = [
+    "build",
+    "twine"
+]
+# test dependency group
+test = [
+    "coverage",
+    "pytest",
+    "pytest-asyncio",
+    "pytest-cov",
+    "gevent",
+]
+# lint dependency group
+lint = [
+    "black>=23.10.0",
+    "isort",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/fabelx/py-tweet"
+"Bug Reports" = "https://github.com/fabelx/py-tweet/issues"
+"Source" = "https://github.com/fabelx/py-tweet"
+
+[build-system]
+requires = ["setuptools>=62.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = { attr = "pytweet.__version__" }
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+
+# omit all files that starts with an underscore
+[tool.coverage.run]
+concurrency = ["gevent"]
+omit = [
+    "*/_*"
+]
+
+[tool.coverage.report]
+skip_empty = true
+show_missing = true
