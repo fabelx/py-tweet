@@ -11,7 +11,6 @@ repos:
   rev: v4.3.0
   hooks:
     - id: trailing-whitespace
-    - id: end-of-file-fixer
     - id: check-yaml
     - id: check-added-large-files
 # The configuration of black and isort is automatically loaded
