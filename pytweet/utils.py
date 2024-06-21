@@ -1,6 +1,9 @@
 import math
 from string import ascii_lowercase, digits
 
+SYNDICATION_URL = "https://cdn.syndication.twimg.com"
+TWEET_URL = f"{SYNDICATION_URL}/tweet-result"
+
 
 def validate_tweet_id(tweet_id: str) -> bool:
     """Validates a tweet ID.

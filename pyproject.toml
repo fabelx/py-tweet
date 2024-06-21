@@ -29,18 +29,23 @@ classifiers = [
 
 dependencies = [
     "aiohttp",
-    "requests"
+    "requests",
 ]
 
-#   $ pip install pycrossword-generator[dev]
+#   $ pip install python-tweet[pydantic]
 [project.optional-dependencies]
+# pydantic dependency
+pydantic = [
+    "pydantic",
+]
 # development dependency group
 dev = [
     "build",
-    "twine"
+    "twine",
 ]
 # test dependency group
 test = [
+    "pydantic",
     "coverage",
     "pytest",
     "pytest-asyncio",

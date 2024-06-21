@@ -70,10 +70,37 @@ if __name__ == '__main__':
     main()
 
 ```
+
+#### Pydantic mode:
+If you prefer working with object-oriented concepts, you may prefer receiving a class.
+However, be aware that the returned JSON from [syndication](https://cdn.syndication.twimg.com/tweet-result) is undocumented, so errors or data loss may occur during conversion to a class.
+
+Requires the installation of [pydantic](https://docs.pydantic.dev/latest/).
+```bash
+pip install python-tweet[pydantic]
+```
+```python
+import asyncio
+import json
+
+from pytweet import get_tweet
+
+
+async def main():
+    tweet_id = "1803774806980022720"
+    tweet = await get_tweet(tweet_id)
+    with open(f"{tweet_id}.json", "w") as f:
+        json.dump(tweet.model_dump(mode="json"), f, indent=2)
+
+
+if __name__ == '__main__':
+    asyncio.run(main())
+```
+If you are using Pydantic but want to receive a `dict`, pass the `as_dict` argument to the `get_tweet` function.
 ___
 
 ### To-do
-- [ ] Return a Tweet class instead a raw dict.
+- [x] Return a Tweet class instead a raw dict.
 ___
 
 ## License
