@@ -70,3 +70,41 @@ def get_id_token(tweet_id: str) -> str:
         .replace("0", "")
         .replace(".", "")
     )
+
+
+def get_params(tweet_id: str) -> dict:
+    """Generates a dictionary of parameters.
+
+    This function creates a dictionary containing parameters related to a tweet,
+    including the tweet ID, language, a token derived from the tweet ID, and
+    various feature flags.
+
+    Args:
+        tweet_id: The tweet ID to be used in the parameters.
+
+    Returns:
+        dict: A dictionary containing the parameters.
+    """
+    return {
+        "id": tweet_id,
+        "lang": "en",  # todo: maybe optional
+        "token": get_id_token(tweet_id),
+        "features": ";".join(
+            [
+                "tfw_timeline_list:",
+                "tfw_follower_count_sunset:true",
+                "tfw_tweet_edit_backend:on",
+                "tfw_refsrc_session:on",
+                "tfw_fosnr_soft_interventions_enabled:on",
+                "tfw_show_birdwatch_pivots_enabled:on",
+                "tfw_show_business_verified_badge:on",
+                "tfw_duplicate_scribes_to_settings:on",
+                "tfw_use_profile_image_shape_enabled:on",
+                "tfw_show_blue_verified_badge:on",
+                "tfw_legacy_timeline_sunset:true",
+                "tfw_show_gov_verified_badge:on",
+                "tfw_show_business_affiliate_badge:on",
+                "tfw_tweet_edit_frontend:on",
+            ]
+        ),
+    }
