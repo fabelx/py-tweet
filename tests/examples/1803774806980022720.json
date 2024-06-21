@@ -1,0 +1,190 @@
+{
+  "__typename": "Tweet",
+  "lang": "en",
+  "favorite_count": 220,
+  "possibly_sensitive": false,
+  "created_at": "2024-06-20T13:00:01.000Z",
+  "display_text_range": [
+    0,
+    233
+  ],
+  "entities": {
+    "hashtags": [
+      {
+        "indices": [
+          36,
+          49
+        ],
+        "text": "GoogleDoodle"
+      }
+    ],
+    "urls": [
+      {
+        "display_url": "goo.gle/4eoTLjS",
+        "expanded_url": "https://goo.gle/4eoTLjS",
+        "indices": [
+          210,
+          233
+        ],
+        "url": "https://t.co/oeMmVSwIrm"
+      }
+    ],
+    "user_mentions": [],
+    "symbols": [],
+    "media": [
+      {
+        "display_url": "pic.x.com/1jydgoknqm",
+        "expanded_url": "https://twitter.com/GoogleDoodles/status/1803774806980022720/photo/1",
+        "indices": [
+          234,
+          257
+        ],
+        "url": "https://t.co/1JyDgoknqm"
+      }
+    ]
+  },
+  "id_str": "1803774806980022720",
+  "text": "Calling all soccer fans! \u26bd\n\nToday's #GoogleDoodle kicks off CONMEBOL Copa America 2024, a soccer tournament between national teams across the Caribbean, Central, North and South America. Don't miss the action\u2192 https://t.co/oeMmVSwIrm https://t.co/1JyDgoknqm",
+  "user": {
+    "id_str": "296459271",
+    "name": "Google Doodles",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1440775265928417284/ywTBFW6L_normal.png",
+    "screen_name": "GoogleDoodles",
+    "verified": false,
+    "is_blue_verified": false,
+    "profile_image_shape": "Circle"
+  },
+  "edit_control": {
+    "edit_tweet_ids": [
+      "1803774806980022720"
+    ],
+    "editable_until_msecs": "1718892001000",
+    "is_edit_eligible": true,
+    "edits_remaining": "5"
+  },
+  "mediaDetails": [
+    {
+      "display_url": "pic.twitter.com/1JyDgoknqm",
+      "expanded_url": "https://twitter.com/GoogleDoodles/status/1803774806980022720/photo/1",
+      "ext_alt_text": "Colorful illustration of the Google letters and a man hitting a soccer ball. Illustrations of a goalie's hands and in the background of the image there is a large crowd.",
+      "ext_media_availability": {
+        "status": "Available"
+      },
+      "indices": [
+        234,
+        257
+      ],
+      "media_url_https": "https://pbs.twimg.com/media/GQcUWPfXMAAKzrX.png",
+      "original_info": {
+        "height": 200,
+        "width": 500,
+        "focus_rects": [
+          {
+            "x": 84,
+            "y": 0,
+            "w": 357,
+            "h": 200
+          },
+          {
+            "x": 162,
+            "y": 0,
+            "w": 200,
+            "h": 200
+          },
+          {
+            "x": 175,
+            "y": 0,
+            "w": 175,
+            "h": 200
+          },
+          {
+            "x": 212,
+            "y": 0,
+            "w": 100,
+            "h": 200
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 500,
+            "h": 200
+          }
+        ]
+      },
+      "sizes": {
+        "large": {
+          "h": 200,
+          "resize": "fit",
+          "w": 500
+        },
+        "medium": {
+          "h": 200,
+          "resize": "fit",
+          "w": 500
+        },
+        "small": {
+          "h": 200,
+          "resize": "fit",
+          "w": 500
+        },
+        "thumb": {
+          "h": 150,
+          "resize": "crop",
+          "w": 150
+        }
+      },
+      "type": "photo",
+      "url": "https://t.co/1JyDgoknqm"
+    }
+  ],
+  "photos": [
+    {
+      "accessibilityLabel": "Colorful illustration of the Google letters and a man hitting a soccer ball. Illustrations of a goalie's hands and in the background of the image there is a large crowd.",
+      "backgroundColor": {
+        "red": 204,
+        "green": 214,
+        "blue": 221
+      },
+      "cropCandidates": [
+        {
+          "x": 84,
+          "y": 0,
+          "w": 357,
+          "h": 200
+        },
+        {
+          "x": 162,
+          "y": 0,
+          "w": 200,
+          "h": 200
+        },
+        {
+          "x": 175,
+          "y": 0,
+          "w": 175,
+          "h": 200
+        },
+        {
+          "x": 212,
+          "y": 0,
+          "w": 100,
+          "h": 200
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 500,
+          "h": 200
+        }
+      ],
+      "expandedUrl": "https://twitter.com/GoogleDoodles/status/1803774806980022720/photo/1",
+      "url": "https://pbs.twimg.com/media/GQcUWPfXMAAKzrX.png",
+      "width": 500,
+      "height": 200
+    }
+  ],
+  "conversation_count": 21,
+  "news_action_type": "conversation",
+  "isEdited": false,
+  "isStaleEdit": false
+}
